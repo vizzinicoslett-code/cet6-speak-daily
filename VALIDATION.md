@@ -18,9 +18,10 @@
 | ESLint | 通过 |
 | 单元与数据测试 | 74 / 74 通过 |
 | 其中课程一致性测试 | 38 / 38 通过，包含在上述 74 项中 |
-| 浏览器 / E2E | 12 / 12 通过 |
+| 浏览器 / E2E | 本地 12 / 12 通过，真实 Pages 在线地址 12 / 12 通过 |
 | Production Build | 通过，使用 `/cet6-speak-daily/` 子路径 |
-| PWA 构建 | 生成 manifest、Service Worker、Workbox 与预缓存 |
+| PWA 构建 | 生成 manifest、Service Worker、Workbox，13 项预缓存 |
+| GitHub Actions | 构建、全部检查、Linux Chromium E2E 与部署均成功 |
 
 本地浏览器使用无头系统 Chrome。环境内缓存的 Chromium 启动失败，改用已安装的 Chrome 后全部验收通过；CI 使用 Playwright 安装的对应 Chromium。
 
@@ -72,7 +73,16 @@ Manifest 为 `standalone`，主题色及背景色均为 `#f6f7f9`。192 / 512 / 
 
 ## GitHub 与 Pages
 
-发布过程和真实在线验证结果将在部署完成后补记。本地 `main`、完整 Pages workflow 和子路径配置均已就绪。
+- 仓库：[vizzinicoslett-code/cet6-speak-daily](https://github.com/vizzinicoslett-code/cet6-speak-daily)。
+- 在线地址：[CET6 Speak Daily](https://vizzinicoslett-code.github.io/cet6-speak-daily/)。
+- 首次完整 CI 与部署：[成功的 Actions run](https://github.com/vizzinicoslett-code/cet6-speak-daily/actions/runs/39201945482)。
+- 应用提交：`2b2ae9e78c1927c782604565b048b8d5b6bb07e7`；后续文档提交不修改应用代码。
+- 已实际创建独立仓库、推送 `main`、配置 Pages workflow、完成 Actions 部署，在线请求返回 HTTP 200 且确认为应用 HTML。
+- 在线再次运行同一套 12 项 E2E：全部通过，53.2 秒。本地最终 12 项通过，43.0 秒。
+- 在线验收包含原生录音保存与播放、完整训练至打卡/日历、正式/自由练习隔离、Day 1–35 页面、刷新恢复、图标实际尺寸及路径、Service Worker 注册与作用域、离线刷新和 Day 35 离线打开。
+- GitHub Pages 子路径资源和 hash 路由刷新已在真实服务器验证，没有以本地模拟替代线上结论。
+
+初始沙箱无法使用本机预览端口及 GitHub 凭据；在允许网络与浏览器进程的执行环境中，已有凭据认证成功，实际发布已完成。没有凭据写入项目或提交。
 
 ## 已知限制
 

@@ -4,6 +4,8 @@
 
 **没有后端、注册、登录、云数据库、AI API、广告或在线题库。** 全部 35 天课程随应用提供；录音、训练进度和复盘保存在当前设备浏览器的 IndexedDB 中。
 
+[在线使用](https://vizzinicoslett-code.github.io/cet6-speak-daily/) · [GitHub 仓库](https://github.com/vizzinicoslett-code/cet6-speak-daily) · [最终验收报告](./VALIDATION.md)
+
 ## 本地运行
 
 需要 Node.js 22.12+ 和 npm。此项目已安装依赖；首次从仓库下载时先运行 `npm ci`。
@@ -122,18 +124,13 @@ scripts/github-publish.mjs
 
 ## GitHub Pages 部署
 
-本项目使用独立 `main` 分支，并提供 GitHub Actions 自动检查与部署。本地验收已完成；本次实际发布与在线验收结果记录在 [VALIDATION.md](./VALIDATION.md)。
+本项目已提交并推送至独立仓库 [cet6-speak-daily](https://github.com/vizzinicoslett-code/cet6-speak-daily)，使用 `main` 分支与 GitHub Actions 部署。
 
-网络与账号可用后，在 GitHub 创建独立仓库 `cet6-speak-daily`，推送当前 `main` 分支，并在 **Settings → Pages → Source** 选择 **GitHub Actions**。免费账户通常需要公开仓库；私有仓库的 Pages 可用性取决于 GitHub 方案。
-
-```powershell
-git remote add origin https://github.com/YOUR_USERNAME/cet6-speak-daily.git
-git push -u origin main
-```
+在线地址为 [https://vizzinicoslett-code.github.io/cet6-speak-daily/](https://vizzinicoslett-code.github.io/cet6-speak-daily/)。已确认真实访问返回 HTTP 200，并在该在线地址运行全部 12 项浏览器验收；详细结果见 [VALIDATION.md](./VALIDATION.md)。后续推送 `main` 会自动检查并部署，无需手动上传 `dist`。
 
 工作流依次执行 npm ci、TypeScript、Lint、74 项单元与数据测试（含 38 项课程一致性测试）、带仓库名 base path 的 Production Build、12 项 Playwright 浏览器检查，再上传构建产物并部署。
 
-部署成功后的地址形式为 `https://YOUR_USERNAME.github.io/cet6-speak-daily/`，实际地址以 Pages 设置或 Actions 部署结果为准。页面使用 hash 路由（如 `#/library`），刷新不请求不存在的服务器路径。
+页面使用 hash 路由（如 `#/library`），刷新不请求不存在的服务器路径。Pages 的 Source 已配置为 GitHub Actions。
 
 Vite 的 `BASE_PATH` 默认 `/`；CI 自动设置为 `/${repository.name}/`。GitHub 子路径在 manifest 的 `start_url/scope`、图标、静态资源与 Service Worker 中保持一致。[Vite 部署文档](https://vite.dev/guide/static-deploy.html)说明了该部署方式。
 

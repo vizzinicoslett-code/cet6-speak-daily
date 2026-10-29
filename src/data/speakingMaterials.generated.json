@@ -1,0 +1,1515 @@
+{
+  "materials": [
+    {
+      "id": "chinese-brands",
+      "title": "Chinese Brands",
+      "titleZh": "中国品牌",
+      "category": "中国发展与中国品牌",
+      "sourceType": "verified-recall",
+      "tags": [
+        "Chinese brands",
+        "innovation",
+        "quality",
+        "global market"
+      ],
+      "questions": [
+        "Why are Chinese brands becoming more popular?",
+        "How can Chinese brands become more competitive internationally?",
+        "What do you think of products made in China?",
+        "Why are young consumers more willing to choose Chinese brands?"
+      ],
+      "structureZh": [
+        "中国品牌近年明显更受欢迎。",
+        "企业越来越重视质量、设计和技术创新。",
+        "年轻消费者对国产品牌更自信。",
+        "未来仍需提升国际声誉和售后服务。",
+        "长期竞争力来自质量和创新，而不只是低价。"
+      ],
+      "fullAnswer": "In recent years, Chinese brands have become much more popular, both in China and overseas.\n\nIn my opinion, there are two main reasons for this change. First, many Chinese companies are paying more attention to quality and innovation. Instead of simply offering low prices, they are developing new technologies and improving the design of their products. Chinese brands in areas such as smartphones, electric vehicles and home appliances have become increasingly competitive.\n\nSecond, young consumers are becoming more confident about products made in China. They care more about quality, design and personal experience than whether a brand comes from a foreign country.\n\nOf course, Chinese brands still need to improve their international reputation and after-sales services.\n\nOverall, I believe Chinese brands have made great progress, and they will become even more competitive in the global market.",
+      "chunks": [
+        {
+          "id": "chinese-brands-chunk-1",
+          "cueZh": "中国品牌近几年越来越受欢迎。",
+          "textEn": "In recent years, Chinese brands have become much more popular, both in China and overseas.",
+          "keywords": [
+            "Chinese brands",
+            "popular",
+            "China",
+            "overseas"
+          ]
+        },
+        {
+          "id": "chinese-brands-chunk-2",
+          "cueZh": "第一个原因是质量和创新提升。",
+          "textEn": "First, many Chinese companies are paying more attention to quality and innovation. Instead of simply offering low prices, they are developing new technologies and improving the design of their products.",
+          "keywords": [
+            "quality",
+            "innovation",
+            "low prices",
+            "technologies",
+            "design"
+          ]
+        },
+        {
+          "id": "chinese-brands-chunk-3",
+          "cueZh": "国产品牌在多个领域竞争力增强。",
+          "textEn": "Chinese brands in areas such as smartphones, electric vehicles and home appliances have become increasingly competitive.",
+          "keywords": [
+            "smartphones",
+            "electric vehicles",
+            "home appliances",
+            "competitive"
+          ]
+        },
+        {
+          "id": "chinese-brands-chunk-4",
+          "cueZh": "年轻消费者对国产品牌更有信心。",
+          "textEn": "Second, young consumers are becoming more confident about products made in China. They care more about quality, design and personal experience than whether a brand comes from a foreign country.",
+          "keywords": [
+            "young consumers",
+            "confident",
+            "quality",
+            "experience"
+          ]
+        },
+        {
+          "id": "chinese-brands-chunk-5",
+          "cueZh": "仍要提升国际声誉和售后服务。",
+          "textEn": "Of course, Chinese brands still need to improve their international reputation and after-sales services.",
+          "keywords": [
+            "international reputation",
+            "after-sales services"
+          ]
+        },
+        {
+          "id": "chinese-brands-chunk-6",
+          "cueZh": "总结：未来会更有全球竞争力。",
+          "textEn": "Overall, I believe Chinese brands have made great progress, and they will become even more competitive in the global market.",
+          "keywords": [
+            "great progress",
+            "global market",
+            "competitive"
+          ]
+        }
+      ],
+      "shortAnswer": "I think the most important thing is to keep improving product quality and innovation. A company may attract customers through a low price, but only reliable products can build long-term trust. Chinese companies should also understand consumers from different cultures and provide better international services. In this way, they can become not only popular Chinese brands, but truly global brands.",
+      "reusableExpressions": [
+        {
+          "id": "chinese-brands-expression-3f0255fe6c6d7b86",
+          "expression": "pay more attention to",
+          "meaningZh": "更加重视"
+        },
+        {
+          "id": "chinese-brands-expression-48f0bd48ade7fc63",
+          "expression": "instead of simply doing...",
+          "meaningZh": "而不是仅仅……"
+        },
+        {
+          "id": "chinese-brands-expression-41ec6bc67645f547",
+          "expression": "become increasingly competitive",
+          "meaningZh": "竞争力越来越强"
+        },
+        {
+          "id": "chinese-brands-expression-481ea0c7f36e7c19",
+          "expression": "care more about... than...",
+          "meaningZh": "比起……更在意……"
+        },
+        {
+          "id": "chinese-brands-expression-3f8acda4c087a9fe",
+          "expression": "improve one's international reputation",
+          "meaningZh": "提升国际声誉"
+        },
+        {
+          "id": "chinese-brands-expression-794e9f4d68a6d22f",
+          "expression": "make great progress",
+          "meaningZh": "取得巨大进步"
+        },
+        {
+          "id": "chinese-brands-expression-41880ef7e48d4206",
+          "expression": "build long-term trust",
+          "meaningZh": "建立长期信任"
+        },
+        {
+          "id": "chinese-brands-expression-4b86631e275e9745",
+          "expression": "understand consumers from different cultures",
+          "meaningZh": "理解不同文化背景的消费者"
+        }
+      ]
+    },
+    {
+      "id": "artificial-intelligence-and-jobs",
+      "title": "Artificial Intelligence and Jobs",
+      "titleZh": "人工智能与就业",
+      "category": "科技与人工智能",
+      "sourceType": "historical-topic",
+      "tags": [
+        "AI",
+        "employment",
+        "technology",
+        "future jobs"
+      ],
+      "questions": [
+        "Will AI cause mass unemployment?",
+        "How will AI influence future jobs?",
+        "Is AI a threat or an opportunity?",
+        "How should university students prepare for the age of AI?"
+      ],
+      "structureZh": [
+        "AI 正迅速改变就业市场。",
+        "部分重复性工作可能被替代。",
+        "新技术同时也会创造新岗位。",
+        "创造力、沟通和判断仍难被机器取代。",
+        "大学生应该学习和 AI 协作。"
+      ],
+      "fullAnswer": "Artificial intelligence is changing the job market very quickly. Some people are worried that AI will replace human workers and cause unemployment.\n\nI think this concern is understandable. AI can already perform many repetitive tasks faster and more accurately than people. As a result, some traditional jobs may disappear or require fewer workers.\n\nHowever, this is only one side of the story. New technologies also create new kinds of jobs. Today, we need people who can develop, manage and apply AI systems. More importantly, abilities such as creativity, communication and human judgment are still difficult for machines to replace.\n\nSo instead of simply being afraid of AI, we should learn how to work with it.\n\nFor university students, the real challenge is not whether AI will arrive, because it already has. The challenge is whether we can develop the skills needed in this new environment.",
+      "chunks": [
+        {
+          "id": "artificial-intelligence-and-jobs-chunk-1",
+          "cueZh": "AI 正在快速改变就业市场。",
+          "textEn": "Artificial intelligence is changing the job market very quickly. Some people are worried that AI will replace human workers and cause unemployment.",
+          "keywords": [
+            "AI",
+            "job market",
+            "replace",
+            "unemployment"
+          ]
+        },
+        {
+          "id": "artificial-intelligence-and-jobs-chunk-2",
+          "cueZh": "AI 会替代部分重复性工作。",
+          "textEn": "AI can already perform many repetitive tasks faster and more accurately than people. As a result, some traditional jobs may disappear or require fewer workers.",
+          "keywords": [
+            "repetitive tasks",
+            "faster",
+            "accurately",
+            "fewer workers"
+          ]
+        },
+        {
+          "id": "artificial-intelligence-and-jobs-chunk-3",
+          "cueZh": "但技术也会创造新的工作岗位。",
+          "textEn": "However, this is only one side of the story. New technologies also create new kinds of jobs.",
+          "keywords": [
+            "one side of the story",
+            "technologies",
+            "new jobs"
+          ]
+        },
+        {
+          "id": "artificial-intelligence-and-jobs-chunk-4",
+          "cueZh": "人类的创造力、沟通和判断仍然重要。",
+          "textEn": "More importantly, abilities such as creativity, communication and human judgment are still difficult for machines to replace.",
+          "keywords": [
+            "creativity",
+            "communication",
+            "judgment",
+            "replace"
+          ]
+        },
+        {
+          "id": "artificial-intelligence-and-jobs-chunk-5",
+          "cueZh": "不要只害怕 AI，而要学会与它协作。",
+          "textEn": "So instead of simply being afraid of AI, we should learn how to work with it.",
+          "keywords": [
+            "instead of",
+            "afraid of AI",
+            "work with it"
+          ]
+        },
+        {
+          "id": "artificial-intelligence-and-jobs-chunk-6",
+          "cueZh": "大学生真正的挑战是培养适应新环境的能力。",
+          "textEn": "For university students, the real challenge is whether we can develop the skills needed in this new environment.",
+          "keywords": [
+            "university students",
+            "real challenge",
+            "skills",
+            "new environment"
+          ]
+        }
+      ],
+      "shortAnswer": "I don't think AI will simply leave most people unemployed. It will certainly replace some repetitive work, but at the same time it will create new occupations and change existing ones. The real challenge is whether workers can update their skills quickly enough. Therefore, education and lifelong learning will become more important in the age of AI.",
+      "reusableExpressions": [
+        {
+          "id": "artificial-intelligence-and-jobs-expression-96fd43d5a7d1e7c9",
+          "expression": "change the job market"
+        },
+        {
+          "id": "artificial-intelligence-and-jobs-expression-492e1275bd1bee61",
+          "expression": "perform repetitive tasks"
+        },
+        {
+          "id": "artificial-intelligence-and-jobs-expression-2b7c714bdbb0449f",
+          "expression": "as a result"
+        },
+        {
+          "id": "artificial-intelligence-and-jobs-expression-17dbfe4eb87025a9",
+          "expression": "one side of the story"
+        },
+        {
+          "id": "artificial-intelligence-and-jobs-expression-ba2f7fff50107514",
+          "expression": "create new kinds of jobs"
+        },
+        {
+          "id": "artificial-intelligence-and-jobs-expression-0b731c7de8e76a97",
+          "expression": "be difficult for machines to replace"
+        },
+        {
+          "id": "artificial-intelligence-and-jobs-expression-05195e91478785f0",
+          "expression": "instead of being afraid of..."
+        },
+        {
+          "id": "artificial-intelligence-and-jobs-expression-8766c4e274fc8b5e",
+          "expression": "learn how to work with..."
+        },
+        {
+          "id": "artificial-intelligence-and-jobs-expression-7a231145df7a1c02",
+          "expression": "the real challenge is whether..."
+        }
+      ]
+    },
+    {
+      "id": "the-importance-of-cooperation",
+      "title": "The Importance of Cooperation",
+      "titleZh": "合作的重要性",
+      "category": "社交与人际关系",
+      "sourceType": "historical-topic",
+      "tags": [
+        "teamwork",
+        "cooperation",
+        "communication",
+        "responsibility"
+      ],
+      "questions": [
+        "Why is cooperation important?",
+        "What makes a good team?",
+        "How can people cooperate effectively?",
+        "Is disagreement always bad in teamwork?"
+      ],
+      "structureZh": [
+        "很多任务一个人难以完成。",
+        "团队成员可以贡献不同能力。",
+        "合理分工可以提高效率。",
+        "合作需要沟通、承诺和责任感。",
+        "好团队不等于所有人意见完全一样。"
+      ],
+      "fullAnswer": "Cooperation is becoming increasingly important in both study and work.\n\nThere are many tasks that are simply too difficult for one person to complete alone. In a team, different people can contribute different skills. For example, one person may be good at collecting information, while another may be better at analyzing data or giving presentations.\n\nCooperation can also improve efficiency. When responsibilities are divided properly, team members can focus on what they do best.\n\nHowever, good teamwork does not happen automatically. Team members need to communicate clearly, keep their promises and take responsibility for their own work.\n\nI also think a good team does not mean that everyone always agrees. Different opinions can actually lead to better ideas if people are willing to listen to each other.\n\nIn short, cooperation allows us to achieve things that would be much harder to accomplish alone.",
+      "chunks": [
+        {
+          "id": "the-importance-of-cooperation-chunk-1",
+          "cueZh": "合作在学习和工作中都越来越重要。",
+          "textEn": "Cooperation is becoming increasingly important in both study and work.",
+          "keywords": [
+            "cooperation",
+            "study",
+            "work",
+            "important"
+          ]
+        },
+        {
+          "id": "the-importance-of-cooperation-chunk-2",
+          "cueZh": "很多任务一个人难以完成。",
+          "textEn": "There are many tasks that are simply too difficult for one person to complete alone.",
+          "keywords": [
+            "tasks",
+            "difficult",
+            "complete alone"
+          ]
+        },
+        {
+          "id": "the-importance-of-cooperation-chunk-3",
+          "cueZh": "团队成员可以贡献不同能力。",
+          "textEn": "In a team, different people can contribute different skills. For example, one person may be good at collecting information, while another may be better at analyzing data or giving presentations.",
+          "keywords": [
+            "different skills",
+            "information",
+            "data",
+            "presentations"
+          ]
+        },
+        {
+          "id": "the-importance-of-cooperation-chunk-4",
+          "cueZh": "合理分工可以提高效率。",
+          "textEn": "Cooperation can also improve efficiency. When responsibilities are divided properly, team members can focus on what they do best.",
+          "keywords": [
+            "improve efficiency",
+            "responsibilities",
+            "focus"
+          ]
+        },
+        {
+          "id": "the-importance-of-cooperation-chunk-5",
+          "cueZh": "好的团队需要沟通和责任感。",
+          "textEn": "Team members need to communicate clearly, keep their promises and take responsibility for their own work.",
+          "keywords": [
+            "communicate",
+            "promises",
+            "responsibility"
+          ]
+        },
+        {
+          "id": "the-importance-of-cooperation-chunk-6",
+          "cueZh": "不同意见不一定是坏事。",
+          "textEn": "Different opinions can actually lead to better ideas if people are willing to listen to each other.",
+          "keywords": [
+            "different opinions",
+            "better ideas",
+            "listen"
+          ]
+        }
+      ],
+      "reusableExpressions": [
+        {
+          "id": "the-importance-of-cooperation-expression-32ec539089e4396d",
+          "expression": "complete something alone"
+        },
+        {
+          "id": "the-importance-of-cooperation-expression-4b43a319c0c2e47d",
+          "expression": "contribute different skills"
+        },
+        {
+          "id": "the-importance-of-cooperation-expression-3cae80ea68808b1d",
+          "expression": "improve efficiency"
+        },
+        {
+          "id": "the-importance-of-cooperation-expression-1f0efad262c974c3",
+          "expression": "divide responsibilities properly"
+        },
+        {
+          "id": "the-importance-of-cooperation-expression-25834a6bb159971b",
+          "expression": "focus on what someone does best"
+        },
+        {
+          "id": "the-importance-of-cooperation-expression-e29e179735dba4b2",
+          "expression": "take responsibility for"
+        },
+        {
+          "id": "the-importance-of-cooperation-expression-88e7b232b8ae5305",
+          "expression": "lead to better ideas"
+        },
+        {
+          "id": "the-importance-of-cooperation-expression-5932b35e74773655",
+          "expression": "be willing to listen to..."
+        }
+      ]
+    },
+    {
+      "id": "ways-to-be-trusted-by-others",
+      "title": "Ways to Be Trusted by Others",
+      "titleZh": "如何赢得别人的信任",
+      "category": "社交与人际关系",
+      "sourceType": "historical-topic",
+      "tags": [
+        "trust",
+        "honesty",
+        "responsibility",
+        "relationships"
+      ],
+      "questions": [
+        "How can we gain other people's trust?",
+        "Why is honesty important?",
+        "What makes a person trustworthy?",
+        "How can trust be maintained?"
+      ],
+      "structureZh": [
+        "信任是关系中非常重要的一部分。",
+        "首先要诚实，说到做到。",
+        "其次要有责任感。",
+        "犯错时应该承认并解决问题。",
+        "信任来自长期稳定的行为。"
+      ],
+      "fullAnswer": "Trust is one of the most important parts of any relationship, whether it is between friends, classmates or colleagues.\n\nIn my opinion, the first way to gain other people's trust is to be honest. If we make a promise, we should try our best to keep it. If we cannot do something, it is better to say so clearly than to make an unrealistic promise.\n\nSecond, we should be responsible. A trustworthy person does not disappear when a problem occurs. Instead, he or she tries to solve the problem and accepts responsibility for mistakes.\n\nAnother important point is consistency. People usually trust us because of what we do repeatedly, not because of one impressive action.\n\nTrust takes a long time to build but can be lost very quickly.\n\nTherefore, if we want others to trust us, we should be honest, responsible and consistent in our daily behavior.",
+      "chunks": [
+        {
+          "id": "ways-to-be-trusted-by-others-chunk-1",
+          "cueZh": "信任是任何关系中都很重要的一部分。",
+          "textEn": "Trust is one of the most important parts of any relationship, whether it is between friends, classmates or colleagues.",
+          "keywords": [
+            "trust",
+            "relationship",
+            "friends",
+            "classmates",
+            "colleagues"
+          ]
+        },
+        {
+          "id": "ways-to-be-trusted-by-others-chunk-2",
+          "cueZh": "赢得信任首先要诚实并遵守承诺。",
+          "textEn": "The first way to gain other people's trust is to be honest. If we make a promise, we should try our best to keep it.",
+          "keywords": [
+            "honest",
+            "promise",
+            "keep it"
+          ]
+        },
+        {
+          "id": "ways-to-be-trusted-by-others-chunk-3",
+          "cueZh": "做不到时不要乱承诺。",
+          "textEn": "If we cannot do something, it is better to say so clearly than to make an unrealistic promise.",
+          "keywords": [
+            "cannot do",
+            "say clearly",
+            "unrealistic promise"
+          ]
+        },
+        {
+          "id": "ways-to-be-trusted-by-others-chunk-4",
+          "cueZh": "可信的人会承担责任并解决问题。",
+          "textEn": "A trustworthy person tries to solve the problem and accepts responsibility for mistakes.",
+          "keywords": [
+            "responsible",
+            "solve",
+            "accept responsibility"
+          ]
+        },
+        {
+          "id": "ways-to-be-trusted-by-others-chunk-5",
+          "cueZh": "信任来自长期稳定的表现。",
+          "textEn": "People usually trust us because of what we do repeatedly, not because of one impressive action.",
+          "keywords": [
+            "consistency",
+            "repeatedly",
+            "impressive action"
+          ]
+        },
+        {
+          "id": "ways-to-be-trusted-by-others-chunk-6",
+          "cueZh": "信任建立慢，失去快。",
+          "textEn": "Trust takes a long time to build but can be lost very quickly.",
+          "keywords": [
+            "build",
+            "lost quickly"
+          ]
+        }
+      ],
+      "reusableExpressions": [
+        {
+          "id": "ways-to-be-trusted-by-others-expression-b4e7e34ebd294d3a",
+          "expression": "gain someone's trust"
+        },
+        {
+          "id": "ways-to-be-trusted-by-others-expression-b546156cb5385240",
+          "expression": "keep a promise"
+        },
+        {
+          "id": "ways-to-be-trusted-by-others-expression-288985a12f83574d",
+          "expression": "make an unrealistic promise"
+        },
+        {
+          "id": "ways-to-be-trusted-by-others-expression-f6de2ecdff27e377",
+          "expression": "accept responsibility for"
+        },
+        {
+          "id": "ways-to-be-trusted-by-others-expression-439c705e332e1a14",
+          "expression": "another important point is..."
+        },
+        {
+          "id": "ways-to-be-trusted-by-others-expression-956d1e00788e1b7b",
+          "expression": "what we do repeatedly"
+        },
+        {
+          "id": "ways-to-be-trusted-by-others-expression-3c1c9b18285dabc6",
+          "expression": "take a long time to build"
+        },
+        {
+          "id": "ways-to-be-trusted-by-others-expression-81bbc8078c2200fd",
+          "expression": "be consistent in..."
+        }
+      ]
+    },
+    {
+      "id": "how-to-manage-stress",
+      "title": "How to Manage Stress",
+      "titleZh": "如何管理压力",
+      "category": "心理健康与压力",
+      "sourceType": "historical-topic",
+      "tags": [
+        "stress",
+        "university life",
+        "mental health",
+        "time management"
+      ],
+      "questions": [
+        "How can university students manage stress?",
+        "Is stress always harmful?",
+        "What do you do when you feel stressed?",
+        "How can students maintain good mental health?"
+      ],
+      "structureZh": [
+        "大学生有压力很正常。",
+        "适当压力可以提供动力。",
+        "压力太强或持续太久会造成问题。",
+        "可以拆分任务、休息、运动和交流。",
+        "管理压力不是逃避挑战。"
+      ],
+      "fullAnswer": "Stress is a common part of university life. Students may worry about exams, future careers, relationships or whether they are making good use of their time.\n\nI don't think all stress is bad. A reasonable amount of pressure can motivate us to work harder. The problem begins when stress becomes too strong or lasts for too long.\n\nWhen I feel stressed, one useful method is to divide a difficult task into several smaller steps. This makes the problem feel much more manageable.\n\nExercise and proper rest are also important. Sometimes studying for another two hours is less effective than taking a short break and coming back with a clearer mind.\n\nTalking to friends can also help because we often discover that other people are facing similar problems.\n\nFor me, managing stress does not mean avoiding challenges. It means learning how to face them in a healthier and more effective way.",
+      "chunks": [
+        {
+          "id": "how-to-manage-stress-chunk-1",
+          "cueZh": "压力是大学生活中很常见的一部分。",
+          "textEn": "Stress is a common part of university life. Students may worry about exams, future careers, relationships or whether they are making good use of their time.",
+          "keywords": [
+            "stress",
+            "university life",
+            "exams",
+            "careers",
+            "relationships"
+          ]
+        },
+        {
+          "id": "how-to-manage-stress-chunk-2",
+          "cueZh": "适量压力不一定是坏事。",
+          "textEn": "I don't think all stress is bad. A reasonable amount of pressure can motivate us to work harder.",
+          "keywords": [
+            "reasonable pressure",
+            "motivate",
+            "harder"
+          ]
+        },
+        {
+          "id": "how-to-manage-stress-chunk-3",
+          "cueZh": "把大任务拆成小步骤。",
+          "textEn": "One useful method is to divide a difficult task into several smaller steps. This makes the problem feel much more manageable.",
+          "keywords": [
+            "divide",
+            "difficult task",
+            "smaller steps",
+            "manageable"
+          ]
+        },
+        {
+          "id": "how-to-manage-stress-chunk-4",
+          "cueZh": "运动和适当休息也很重要。",
+          "textEn": "Exercise and proper rest are also important. Sometimes taking a short break helps us come back with a clearer mind.",
+          "keywords": [
+            "exercise",
+            "proper rest",
+            "short break",
+            "clearer mind"
+          ]
+        },
+        {
+          "id": "how-to-manage-stress-chunk-5",
+          "cueZh": "和朋友交流也能减压。",
+          "textEn": "Talking to friends can also help because we often discover that other people are facing similar problems.",
+          "keywords": [
+            "talking to friends",
+            "similar problems"
+          ]
+        },
+        {
+          "id": "how-to-manage-stress-chunk-6",
+          "cueZh": "管理压力不是逃避挑战。",
+          "textEn": "Managing stress does not mean avoiding challenges. It means learning how to face them in a healthier and more effective way.",
+          "keywords": [
+            "manage stress",
+            "avoid challenges",
+            "healthier",
+            "effective"
+          ]
+        }
+      ],
+      "reusableExpressions": [
+        {
+          "id": "how-to-manage-stress-expression-09fab71ac6d56319",
+          "expression": "a common part of..."
+        },
+        {
+          "id": "how-to-manage-stress-expression-35c413d28cd58bbb",
+          "expression": "a reasonable amount of pressure"
+        },
+        {
+          "id": "how-to-manage-stress-expression-9e9c75f515d03b94",
+          "expression": "motivate someone to..."
+        },
+        {
+          "id": "how-to-manage-stress-expression-e6d7a71fffd55bb5",
+          "expression": "divide a task into smaller steps"
+        },
+        {
+          "id": "how-to-manage-stress-expression-b5470f0dd6b11273",
+          "expression": "feel more manageable"
+        },
+        {
+          "id": "how-to-manage-stress-expression-9dfc51d7e8ca8106",
+          "expression": "come back with a clearer mind"
+        },
+        {
+          "id": "how-to-manage-stress-expression-051aa300b345607d",
+          "expression": "face similar problems"
+        },
+        {
+          "id": "how-to-manage-stress-expression-dc44917fb1576eae",
+          "expression": "avoid challenges"
+        }
+      ]
+    },
+    {
+      "id": "smartphones",
+      "title": "Smartphones",
+      "titleZh": "智能手机",
+      "category": "网络与社交媒体",
+      "sourceType": "historical-topic",
+      "tags": [
+        "smartphone",
+        "technology",
+        "distraction",
+        "social media"
+      ],
+      "questions": [
+        "What are the advantages and disadvantages of smartphones?",
+        "Are smartphones making our lives better?",
+        "How can students avoid smartphone distraction?",
+        "Should phones be restricted in class?"
+      ],
+      "structureZh": [
+        "手机已经成为现代生活的重要工具。",
+        "它让交流、搜索、导航和支付更方便。",
+        "最大问题之一是分散注意力。",
+        "无意识刷社交媒体会浪费大量时间。",
+        "问题不在手机本身，而在使用方式。"
+      ],
+      "fullAnswer": "Smartphones have become an essential part of modern life.\n\nThey make many things much more convenient. We can communicate with friends, search for information, use maps, make payments and even attend online classes with just one device.\n\nHowever, smartphones can also create problems. One of the biggest problems is distraction. When we receive messages and notifications all the time, it becomes difficult to concentrate on one task for a long period.\n\nAnother problem is that some people spend too much time scrolling through social media without realizing how much time has passed.\n\nPersonally, I don't think smartphones themselves are the problem. The important thing is how we use them.\n\nWe can turn off unnecessary notifications, avoid using our phones while studying and set limits on entertainment apps.\n\nTechnology should make our lives easier, not control how we spend every minute of our day.",
+      "chunks": [
+        {
+          "id": "smartphones-chunk-1",
+          "cueZh": "智能手机已成为现代生活的重要组成部分。",
+          "textEn": "Smartphones have become an essential part of modern life.",
+          "keywords": [
+            "smartphones",
+            "essential",
+            "modern life"
+          ]
+        },
+        {
+          "id": "smartphones-chunk-2",
+          "cueZh": "手机带来很多便利。",
+          "textEn": "They make many things much more convenient. We can communicate with friends, search for information, use maps, make payments and even attend online classes with just one device.",
+          "keywords": [
+            "communicate",
+            "information",
+            "maps",
+            "payments",
+            "classes"
+          ]
+        },
+        {
+          "id": "smartphones-chunk-3",
+          "cueZh": "手机最大的问题之一是分心。",
+          "textEn": "One of the biggest problems is distraction. When we receive messages and notifications all the time, it becomes difficult to concentrate on one task for a long period.",
+          "keywords": [
+            "problems",
+            "distraction",
+            "notifications",
+            "concentrate"
+          ]
+        },
+        {
+          "id": "smartphones-chunk-4",
+          "cueZh": "无意识刷社交媒体会浪费时间。",
+          "textEn": "Some people spend too much time scrolling through social media without realizing how much time has passed.",
+          "keywords": [
+            "scrolling",
+            "social media",
+            "without realizing",
+            "time"
+          ]
+        },
+        {
+          "id": "smartphones-chunk-5",
+          "cueZh": "真正重要的是如何使用手机。",
+          "textEn": "I don't think smartphones themselves are the problem. The important thing is how we use them.",
+          "keywords": [
+            "not the problem",
+            "how we use them"
+          ]
+        },
+        {
+          "id": "smartphones-chunk-6",
+          "cueZh": "技术应该服务生活，而不是控制生活。",
+          "textEn": "Technology should make our lives easier, not control how we spend every minute of our day.",
+          "keywords": [
+            "technology",
+            "easier",
+            "control",
+            "every minute"
+          ]
+        }
+      ],
+      "reusableExpressions": [
+        {
+          "id": "smartphones-expression-6f373484c30f6111",
+          "expression": "an essential part of..."
+        },
+        {
+          "id": "smartphones-expression-f4b17878b8c420ae",
+          "expression": "make things more convenient"
+        },
+        {
+          "id": "smartphones-expression-b6810e34126c7204",
+          "expression": "one of the biggest problems is..."
+        },
+        {
+          "id": "smartphones-expression-73b9c1783531ba40",
+          "expression": "concentrate on one task"
+        },
+        {
+          "id": "smartphones-expression-ce89c05054d72c1f",
+          "expression": "without realizing..."
+        },
+        {
+          "id": "smartphones-expression-95ed24da24e9c523",
+          "expression": "the important thing is how..."
+        },
+        {
+          "id": "smartphones-expression-ba1dc6224085a305",
+          "expression": "set limits on..."
+        },
+        {
+          "id": "smartphones-expression-c67150fa1918a5e8",
+          "expression": "make our lives easier"
+        }
+      ]
+    },
+    {
+      "id": "the-role-of-the-university-library",
+      "title": "The Role of the University Library",
+      "titleZh": "大学图书馆的作用",
+      "category": "大学与校园生活",
+      "sourceType": "historical-topic",
+      "tags": [
+        "library",
+        "study",
+        "university",
+        "academic resources"
+      ],
+      "questions": [
+        "Are university libraries still important?",
+        "What role does a university library play?",
+        "Why do students still need libraries in the Internet age?",
+        "How should university libraries change?"
+      ],
+      "structureZh": [
+        "即使网上信息很多，图书馆仍然重要。",
+        "图书馆提供安静、适合学习的环境。",
+        "它还提供可靠的学术资源。",
+        "现代图书馆不仅是借书的地方。",
+        "图书馆的角色会变化，但不会消失。"
+      ],
+      "fullAnswer": "Some people may think university libraries are becoming less important because students can find almost everything online. I don't agree.\n\nFirst, a library provides a quiet and organized environment for study. For many students, it is much easier to concentrate in a library than in a dormitory.\n\nSecond, libraries provide reliable academic resources, including books, journals and databases. Information on the Internet is convenient, but it is not always accurate or trustworthy.\n\nLibraries also give students a place where they can focus on learning without too many distractions.\n\nOf course, the role of libraries is changing. Today, a good university library is not only a place for borrowing books. It also provides digital resources, study spaces and academic services.\n\nSo I believe libraries will continue to play an important role in university education, although the way we use them may change.",
+      "chunks": [
+        {
+          "id": "the-role-of-the-university-library-chunk-1",
+          "cueZh": "虽然网上什么都能搜到，但图书馆仍然重要。",
+          "textEn": "Some people may think university libraries are becoming less important because students can find almost everything online. I don't agree.",
+          "keywords": [
+            "online",
+            "less important",
+            "disagree"
+          ]
+        },
+        {
+          "id": "the-role-of-the-university-library-chunk-2",
+          "cueZh": "图书馆提供安静、适合学习的环境。",
+          "textEn": "A library provides a quiet and organized environment for study. For many students, it is much easier to concentrate in a library than in a dormitory.",
+          "keywords": [
+            "quiet",
+            "organized",
+            "environment",
+            "concentrate"
+          ]
+        },
+        {
+          "id": "the-role-of-the-university-library-chunk-3",
+          "cueZh": "图书馆提供可靠的学术资源。",
+          "textEn": "Libraries provide reliable academic resources, including books, journals and databases.",
+          "keywords": [
+            "reliable",
+            "books",
+            "journals",
+            "databases"
+          ]
+        },
+        {
+          "id": "the-role-of-the-university-library-chunk-4",
+          "cueZh": "网上的信息不一定总是准确可靠。",
+          "textEn": "Information on the Internet is convenient, but it is not always accurate or trustworthy.",
+          "keywords": [
+            "Internet",
+            "convenient",
+            "accurate",
+            "trustworthy"
+          ]
+        },
+        {
+          "id": "the-role-of-the-university-library-chunk-5",
+          "cueZh": "现代图书馆功能正在变化。",
+          "textEn": "Today, a good university library is not only a place for borrowing books. It also provides digital resources, study spaces and academic services.",
+          "keywords": [
+            "role",
+            "changing",
+            "digital resources",
+            "study spaces"
+          ]
+        },
+        {
+          "id": "the-role-of-the-university-library-chunk-6",
+          "cueZh": "图书馆仍会在大学教育中发挥重要作用。",
+          "textEn": "Libraries will continue to play an important role in university education, although the way we use them may change.",
+          "keywords": [
+            "continue",
+            "important role",
+            "university education"
+          ]
+        }
+      ],
+      "reusableExpressions": [
+        {
+          "id": "the-role-of-the-university-library-expression-7efc3d2ad85b228f",
+          "expression": "find almost everything online"
+        },
+        {
+          "id": "the-role-of-the-university-library-expression-62a2f8bb028fce71",
+          "expression": "provide an environment for..."
+        },
+        {
+          "id": "the-role-of-the-university-library-expression-77f21f7b2428b99d",
+          "expression": "concentrate on..."
+        },
+        {
+          "id": "the-role-of-the-university-library-expression-276f552a94cd1188",
+          "expression": "reliable academic resources"
+        },
+        {
+          "id": "the-role-of-the-university-library-expression-958a00b400b65020",
+          "expression": "accurate or trustworthy"
+        },
+        {
+          "id": "the-role-of-the-university-library-expression-db5b8569fa8e8cad",
+          "expression": "without too many distractions"
+        },
+        {
+          "id": "the-role-of-the-university-library-expression-73839737b72ec58c",
+          "expression": "the role of... is changing"
+        },
+        {
+          "id": "the-role-of-the-university-library-expression-9bf3195bac042479",
+          "expression": "continue to play an important role"
+        }
+      ]
+    },
+    {
+      "id": "machine-translation",
+      "title": "Machine Translation",
+      "titleZh": "机器翻译",
+      "category": "科技与人工智能",
+      "sourceType": "historical-topic",
+      "tags": [
+        "translation",
+        "AI",
+        "language",
+        "technology"
+      ],
+      "questions": [
+        "Can machine translation replace human translators?",
+        "What are the advantages of machine translation?",
+        "What are the limitations of machine translation?",
+        "What will the future of translation look like?"
+      ],
+      "structureZh": [
+        "机器翻译发展快，而且非常方便。",
+        "日常场景下速度快、成本低。",
+        "但语言与文化、语境紧密相关。",
+        "幽默、情绪和文化含义仍很难准确处理。",
+        "未来更可能是人机协作。"
+      ],
+      "fullAnswer": "Machine translation has developed rapidly in recent years and has made communication much more convenient.\n\nFor everyday situations, it is extremely useful. If we want to understand a foreign website, travel in another country or communicate with someone who speaks a different language, machine translation can give us an answer almost immediately.\n\nHowever, I don't think it can completely replace human translators.\n\nLanguage is closely connected with culture and context. The same sentence may have different meanings in different situations. Humor, emotion and cultural references are also difficult for machines to understand perfectly.\n\nThis is especially important in literature, international business and other professional situations where small mistakes may cause serious misunderstandings.\n\nTherefore, I think the future of translation will probably involve cooperation between humans and machines.\n\nMachines can provide speed and efficiency, while humans can provide judgment, accuracy and cultural understanding.",
+      "chunks": [
+        {
+          "id": "machine-translation-chunk-1",
+          "cueZh": "机器翻译发展很快，也让交流更方便。",
+          "textEn": "Machine translation has developed rapidly in recent years and has made communication much more convenient.",
+          "keywords": [
+            "machine translation",
+            "developed rapidly",
+            "convenient"
+          ]
+        },
+        {
+          "id": "machine-translation-chunk-2",
+          "cueZh": "日常使用场景下机器翻译非常有用。",
+          "textEn": "For everyday situations, it is extremely useful. Machine translation can give us an answer almost immediately.",
+          "keywords": [
+            "website",
+            "travel",
+            "different language",
+            "immediately"
+          ]
+        },
+        {
+          "id": "machine-translation-chunk-3",
+          "cueZh": "机器翻译还不能完全取代人工翻译。",
+          "textEn": "However, I don't think it can completely replace human translators.",
+          "keywords": [
+            "not completely replace",
+            "human translators"
+          ]
+        },
+        {
+          "id": "machine-translation-chunk-4",
+          "cueZh": "语言与文化和语境紧密相关。",
+          "textEn": "Language is closely connected with culture and context. The same sentence may have different meanings in different situations.",
+          "keywords": [
+            "culture",
+            "context",
+            "different meanings"
+          ]
+        },
+        {
+          "id": "machine-translation-chunk-5",
+          "cueZh": "幽默、情感和文化含义很难完全由机器理解。",
+          "textEn": "Humor, emotion and cultural references are also difficult for machines to understand perfectly.",
+          "keywords": [
+            "humor",
+            "emotion",
+            "cultural references"
+          ]
+        },
+        {
+          "id": "machine-translation-chunk-6",
+          "cueZh": "未来更可能是人机合作。",
+          "textEn": "The future of translation will probably involve cooperation between humans and machines. Machines can provide speed and efficiency, while humans can provide judgment, accuracy and cultural understanding.",
+          "keywords": [
+            "future",
+            "cooperation",
+            "speed",
+            "judgment"
+          ]
+        }
+      ],
+      "shortAnswer": "Not completely. Machine translation is already very useful for everyday communication because it is fast and convenient. However, when a text involves culture, emotion or important professional information, human translators are still necessary. I think the future will be a combination of machine efficiency and human judgment.",
+      "reusableExpressions": [
+        {
+          "id": "machine-translation-expression-0659835c4c4bb86a",
+          "expression": "develop rapidly"
+        },
+        {
+          "id": "machine-translation-expression-f91bc3b11ebc633e",
+          "expression": "everyday situations"
+        },
+        {
+          "id": "machine-translation-expression-15099433b08a8821",
+          "expression": "almost immediately"
+        },
+        {
+          "id": "machine-translation-expression-d6cefde1b0a5c773",
+          "expression": "completely replace..."
+        },
+        {
+          "id": "machine-translation-expression-e408447ec4d2312d",
+          "expression": "be closely connected with..."
+        },
+        {
+          "id": "machine-translation-expression-f5f2931de85d2128",
+          "expression": "cultural references"
+        },
+        {
+          "id": "machine-translation-expression-bb0e1854e530c7cf",
+          "expression": "cause misunderstandings"
+        },
+        {
+          "id": "machine-translation-expression-ba9c8ec40b6cf9d3",
+          "expression": "involve cooperation between..."
+        },
+        {
+          "id": "machine-translation-expression-c4b830eadaa1dd91",
+          "expression": "provide speed and efficiency"
+        }
+      ]
+    },
+    {
+      "id": "online-medical-services",
+      "title": "Online Medical Services",
+      "titleZh": "在线医疗",
+      "category": "健康与生活方式",
+      "sourceType": "historical-topic",
+      "tags": [
+        "healthcare",
+        "online services",
+        "doctors",
+        "hospitals"
+      ],
+      "questions": [
+        "What are the advantages of online medical services?",
+        "Can online medical services replace hospitals?",
+        "How can technology improve healthcare?",
+        "What are the limitations of online healthcare?"
+      ],
+      "structureZh": [
+        "在线医疗可以让医疗服务更方便。",
+        "小问题和复诊可以在线完成。",
+        "偏远地区的人也更容易获得医疗建议。",
+        "线上无法完成完整体检和复杂诊断。",
+        "在线医疗应当补充而不是取代医院。"
+      ],
+      "fullAnswer": "Online medical services have become more common in recent years, and I think they can make healthcare more convenient.\n\nOne important advantage is that patients can talk to doctors without traveling to a hospital. This is especially useful for minor health problems, follow-up consultations and people who live far away from large hospitals.\n\nOnline services may also save time because patients do not always need to spend hours waiting in a hospital.\n\nHowever, online healthcare has clear limitations. A doctor cannot perform a complete physical examination through a screen, and some diseases require medical tests or face-to-face diagnosis.\n\nTherefore, I don't think online services should replace traditional hospitals.\n\nInstead, the two forms of healthcare should complement each other.\n\nOnline platforms can deal with basic consultation and follow-up services, while hospitals remain necessary for examination, diagnosis and treatment.",
+      "chunks": [
+        {
+          "id": "online-medical-services-chunk-1",
+          "cueZh": "在线医疗越来越常见，也让医疗更方便。",
+          "textEn": "Online medical services have become more common in recent years, and I think they can make healthcare more convenient.",
+          "keywords": [
+            "online medical services",
+            "common",
+            "convenient"
+          ]
+        },
+        {
+          "id": "online-medical-services-chunk-2",
+          "cueZh": "患者不用每次都去医院。",
+          "textEn": "Patients can talk to doctors without traveling to a hospital.",
+          "keywords": [
+            "patients",
+            "doctors",
+            "without traveling",
+            "hospital"
+          ]
+        },
+        {
+          "id": "online-medical-services-chunk-3",
+          "cueZh": "适合小问题、复诊和偏远地区。",
+          "textEn": "This is especially useful for minor health problems, follow-up consultations and people who live far away from large hospitals.",
+          "keywords": [
+            "minor problems",
+            "follow-up",
+            "far away"
+          ]
+        },
+        {
+          "id": "online-medical-services-chunk-4",
+          "cueZh": "线上医疗也可以节省等待时间。",
+          "textEn": "Online services may also save time because patients do not always need to spend hours waiting in a hospital.",
+          "keywords": [
+            "save time",
+            "waiting",
+            "hospital"
+          ]
+        },
+        {
+          "id": "online-medical-services-chunk-5",
+          "cueZh": "线上医疗存在明显限制。",
+          "textEn": "Online healthcare has clear limitations. A doctor cannot perform a complete physical examination through a screen, and some diseases require medical tests or face-to-face diagnosis.",
+          "keywords": [
+            "limitations",
+            "physical examination",
+            "tests",
+            "diagnosis"
+          ]
+        },
+        {
+          "id": "online-medical-services-chunk-6",
+          "cueZh": "线上和线下医疗应该相互补充。",
+          "textEn": "Online services should not replace traditional hospitals. The two forms of healthcare should complement each other.",
+          "keywords": [
+            "replace",
+            "complement each other",
+            "consultation",
+            "treatment"
+          ]
+        }
+      ],
+      "reusableExpressions": [
+        {
+          "id": "online-medical-services-expression-094cdc62e8d26822",
+          "expression": "become more common"
+        },
+        {
+          "id": "online-medical-services-expression-3d13df54f09767cb",
+          "expression": "one important advantage is..."
+        },
+        {
+          "id": "online-medical-services-expression-9120567aa7572571",
+          "expression": "especially useful for..."
+        },
+        {
+          "id": "online-medical-services-expression-e3a8224eb1fb6f6f",
+          "expression": "save time"
+        },
+        {
+          "id": "online-medical-services-expression-d126326a9f1fff7c",
+          "expression": "have clear limitations"
+        },
+        {
+          "id": "online-medical-services-expression-874572d2a3784f89",
+          "expression": "perform a physical examination"
+        },
+        {
+          "id": "online-medical-services-expression-653e9871599ec00d",
+          "expression": "face-to-face"
+        },
+        {
+          "id": "online-medical-services-expression-8051cdf35feaeb01",
+          "expression": "replace traditional..."
+        },
+        {
+          "id": "online-medical-services-expression-35c0ba688516f253",
+          "expression": "complement each other"
+        }
+      ]
+    },
+    {
+      "id": "loneliness-and-mental-health",
+      "title": "Loneliness and Mental Health",
+      "titleZh": "孤独与心理健康",
+      "category": "心理健康与压力",
+      "sourceType": "historical-topic",
+      "tags": [
+        "loneliness",
+        "mental health",
+        "university students",
+        "social connection"
+      ],
+      "questions": [
+        "What are the harmful effects of loneliness?",
+        "How can people overcome loneliness?",
+        "Why is mental health important for university students?",
+        "What would you do if your classmate felt lonely?"
+      ],
+      "structureZh": [
+        "偶尔独处并不一定是坏事。",
+        "长期孤独会影响心理和身体状态。",
+        "孤独会降低动力、自信和社交意愿。",
+        "大学生在进入新环境时尤其容易感到孤独。",
+        "保持联系、参加活动、求助都很重要。"
+      ],
+      "fullAnswer": "Spending some time alone is not necessarily a bad thing. Sometimes we all need quiet time to relax and think.\n\nHowever, long-term loneliness can have negative effects on both mental and physical health.\n\nWhen people feel lonely for a long time, they may lose motivation, become less confident and find it harder to communicate with others. This can create a cycle: the lonelier a person feels, the less willing he or she may be to socialize, which can make the loneliness even worse.\n\nFor university students, loneliness may be especially common when they first leave home or enter a new environment.\n\nI think the best way to deal with it is to stay connected with other people. Joining activities, exercising with friends or simply talking to someone we trust can all help.\n\nIf the problem becomes serious, seeking professional help is also a sensible choice.",
+      "chunks": [
+        {
+          "id": "loneliness-and-mental-health-chunk-1",
+          "cueZh": "偶尔独处并不一定是坏事。",
+          "textEn": "Spending some time alone is not necessarily a bad thing. Sometimes we all need quiet time to relax and think.",
+          "keywords": [
+            "alone",
+            "not necessarily",
+            "relax",
+            "think"
+          ]
+        },
+        {
+          "id": "loneliness-and-mental-health-chunk-2",
+          "cueZh": "长期孤独会影响心理和身体健康。",
+          "textEn": "Long-term loneliness can have negative effects on both mental and physical health.",
+          "keywords": [
+            "long-term loneliness",
+            "negative effects",
+            "mental",
+            "physical"
+          ]
+        },
+        {
+          "id": "loneliness-and-mental-health-chunk-3",
+          "cueZh": "孤独会影响动力、自信和沟通。",
+          "textEn": "People may lose motivation, become less confident and find it harder to communicate with others.",
+          "keywords": [
+            "motivation",
+            "confident",
+            "communicate"
+          ]
+        },
+        {
+          "id": "loneliness-and-mental-health-chunk-4",
+          "cueZh": "孤独容易形成恶性循环。",
+          "textEn": "The lonelier a person feels, the less willing he or she may be to socialize, which can make the loneliness even worse.",
+          "keywords": [
+            "cycle",
+            "lonely",
+            "less willing",
+            "socialize"
+          ]
+        },
+        {
+          "id": "loneliness-and-mental-health-chunk-5",
+          "cueZh": "大学生在进入新环境时尤其容易孤独。",
+          "textEn": "For university students, loneliness may be especially common when they first leave home or enter a new environment.",
+          "keywords": [
+            "university students",
+            "leave home",
+            "new environment"
+          ]
+        },
+        {
+          "id": "loneliness-and-mental-health-chunk-6",
+          "cueZh": "保持社交联系并在必要时求助。",
+          "textEn": "Joining activities, exercising with friends or simply talking to someone we trust can all help. If the problem becomes serious, seeking professional help is also a sensible choice.",
+          "keywords": [
+            "stay connected",
+            "activities",
+            "friends",
+            "professional help"
+          ]
+        }
+      ],
+      "shortAnswer": "First, I would spend some time listening to my classmate, because sometimes people mainly need someone who is willing to listen. I might also invite him or her to have a meal, exercise or join an activity together. If the problem seemed serious and lasted for a long time, I would encourage my classmate to seek professional help.",
+      "reusableExpressions": [
+        {
+          "id": "loneliness-and-mental-health-expression-e421feacdddddac2",
+          "expression": "not necessarily a bad thing"
+        },
+        {
+          "id": "loneliness-and-mental-health-expression-03ce807908eda203",
+          "expression": "have negative effects on..."
+        },
+        {
+          "id": "loneliness-and-mental-health-expression-e3df7489a45b7bd8",
+          "expression": "lose motivation"
+        },
+        {
+          "id": "loneliness-and-mental-health-expression-34ced5a0cf5791fb",
+          "expression": "become less confident"
+        },
+        {
+          "id": "loneliness-and-mental-health-expression-b81b41c946d73803",
+          "expression": "create a cycle"
+        },
+        {
+          "id": "loneliness-and-mental-health-expression-39ab10432b5a631f",
+          "expression": "be willing to..."
+        },
+        {
+          "id": "loneliness-and-mental-health-expression-b34643a039133506",
+          "expression": "stay connected with..."
+        },
+        {
+          "id": "loneliness-and-mental-health-expression-4489c98d58e5a2cd",
+          "expression": "seek professional help"
+        },
+        {
+          "id": "loneliness-and-mental-health-expression-6b4bf45932394bc1",
+          "expression": "a sensible choice"
+        }
+      ]
+    }
+  ],
+  "generalExpressions": [
+    {
+      "id": "general-表达观点",
+      "category": "表达观点",
+      "expressions": [
+        {
+          "id": "general-表达观点-e8f2f4157c84f609",
+          "expression": "Personally, I think..."
+        },
+        {
+          "id": "general-表达观点-63b67ceec1da26d8",
+          "expression": "In my opinion..."
+        },
+        {
+          "id": "general-表达观点-6d4cec33fe21e835",
+          "expression": "From my point of view..."
+        },
+        {
+          "id": "general-表达观点-bf0f9e8cf47c7cba",
+          "expression": "I would say that..."
+        },
+        {
+          "id": "general-表达观点-8abdf770a6a139f4",
+          "expression": "I don't think the situation is that simple."
+        }
+      ]
+    },
+    {
+      "id": "general-补充理由",
+      "category": "补充理由",
+      "expressions": [
+        {
+          "id": "general-补充理由-224981c717591fbb",
+          "expression": "Another important point is..."
+        },
+        {
+          "id": "general-补充理由-9f69d6e7f06a2aa3",
+          "expression": "More importantly,..."
+        },
+        {
+          "id": "general-补充理由-9208a78947a3e67d",
+          "expression": "Another advantage is that..."
+        },
+        {
+          "id": "general-补充理由-61640871df492a9f",
+          "expression": "One important reason is that..."
+        },
+        {
+          "id": "general-补充理由-7ec02ea16d0f9ae1",
+          "expression": "This is especially useful for..."
+        }
+      ]
+    },
+    {
+      "id": "general-转折与让步",
+      "category": "转折与让步",
+      "expressions": [
+        {
+          "id": "general-转折与让步-45b928211b32b29b",
+          "expression": "However, this is only one side of the story."
+        },
+        {
+          "id": "general-转折与让步-665a7507893941dc",
+          "expression": "It is true that..., but..."
+        },
+        {
+          "id": "general-转折与让步-98917820631677ea",
+          "expression": "I agree to some extent, but..."
+        },
+        {
+          "id": "general-转折与让步-38330a31fc026f62",
+          "expression": "Of course, there are still some limitations."
+        },
+        {
+          "id": "general-转折与让步-cd4e78155c71c9fe",
+          "expression": "However, I don't think it can completely replace..."
+        }
+      ]
+    },
+    {
+      "id": "general-举例",
+      "category": "举例",
+      "expressions": [
+        {
+          "id": "general-举例-d3e792b39ed5af20",
+          "expression": "For example,..."
+        },
+        {
+          "id": "general-举例-e53a0ae6360deed0",
+          "expression": "For instance,..."
+        },
+        {
+          "id": "general-举例-68f2e5edc73b363f",
+          "expression": "A good example is..."
+        },
+        {
+          "id": "general-举例-312658ac253e7310",
+          "expression": "In everyday situations,..."
+        },
+        {
+          "id": "general-举例-07889eada015fd94",
+          "expression": "This is especially common when..."
+        }
+      ]
+    },
+    {
+      "id": "general-因果",
+      "category": "因果",
+      "expressions": [
+        {
+          "id": "general-因果-2bcfdaca27dada77",
+          "expression": "As a result,..."
+        },
+        {
+          "id": "general-因果-cc48299b0d57dd80",
+          "expression": "This can lead to..."
+        },
+        {
+          "id": "general-因果-04de6e795f7b6123",
+          "expression": "This is because..."
+        },
+        {
+          "id": "general-因果-70bed10431226fed",
+          "expression": "That is why..."
+        },
+        {
+          "id": "general-因果-d1f1651ee06282c5",
+          "expression": "which can make the problem even worse."
+        }
+      ]
+    },
+    {
+      "id": "general-建议",
+      "category": "建议",
+      "expressions": [
+        {
+          "id": "general-建议-c371a4aa07983e4d",
+          "expression": "Instead of simply..., we should..."
+        },
+        {
+          "id": "general-建议-ba1f0aaded7245b1",
+          "expression": "One useful method is to..."
+        },
+        {
+          "id": "general-建议-5cbc0aee30cee81f",
+          "expression": "We should learn how to..."
+        },
+        {
+          "id": "general-建议-98d4124ead7ff879",
+          "expression": "A better solution would be to..."
+        },
+        {
+          "id": "general-建议-cd2ed738e4b80b9d",
+          "expression": "The two sides should complement each other."
+        }
+      ]
+    },
+    {
+      "id": "general-总结",
+      "category": "总结",
+      "expressions": [
+        {
+          "id": "general-总结-38f2d453a8cb77fe",
+          "expression": "Overall, I believe..."
+        },
+        {
+          "id": "general-总结-dd611a7bf65140e6",
+          "expression": "In short,..."
+        },
+        {
+          "id": "general-总结-70e40637ed1117e9",
+          "expression": "Therefore, I think..."
+        },
+        {
+          "id": "general-总结-24b3cee7d1da0cad",
+          "expression": "For me, the important thing is..."
+        },
+        {
+          "id": "general-总结-b6525f78e0ffeba6",
+          "expression": "The real challenge is whether..."
+        }
+      ]
+    },
+    {
+      "id": "general-双人讨论互动",
+      "category": "双人讨论互动",
+      "expressions": [
+        {
+          "id": "general-双人讨论互动-39e98cab28e35edf",
+          "expression": "I see your point, but..."
+        },
+        {
+          "id": "general-双人讨论互动-b1890ebc7e25d656",
+          "expression": "That's true. Another thing we should consider is..."
+        },
+        {
+          "id": "general-双人讨论互动-e94d50b4700bba57",
+          "expression": "I agree with you on that."
+        },
+        {
+          "id": "general-双人讨论互动-a89f1481bbd9d5b4",
+          "expression": "I'm not sure I completely agree."
+        },
+        {
+          "id": "general-双人讨论互动-20b6405b065d1be6",
+          "expression": "What do you think about...?"
+        },
+        {
+          "id": "general-双人讨论互动-893196883474a595",
+          "expression": "Maybe we can look at it from another angle."
+        },
+        {
+          "id": "general-双人讨论互动-586c4391a781d5f3",
+          "expression": "So perhaps we can agree that..."
+        },
+        {
+          "id": "general-双人讨论互动-6040346f13b2bece",
+          "expression": "That's probably the most practical solution."
+        }
+      ]
+    }
+  ]
+}

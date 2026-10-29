@@ -16,6 +16,7 @@ import {
   Headphones,
   Info,
   Leaf,
+  Layers,
   LockKeyhole,
   Mic,
   NotebookPen,
@@ -49,6 +50,8 @@ import {
 } from "./storage";
 import type { DailyProgress, Question, Recording, TrainingDay } from "./types";
 import Recorder, { AudioPlayer } from "./Recorder";
+import Materials from "./Materials";
+import { materialsForQuestion } from "./materialLinks";
 
 const steps = [
   "今日输入",
@@ -80,17 +83,19 @@ const categories = [
   "Lifestyle",
   "Environment",
 ];
-type View = "today" | "calendar" | "library" | "records" | "train";
+type View = "today" | "calendar" | "library" | "materials" | "records" | "train";
 const navItems = [
   { id: "today", label: "今日训练", icon: Sprout },
   { id: "calendar", label: "训练日历", icon: CalendarDays },
   { id: "library", label: "题库", icon: BookOpen },
+  { id: "materials", label: "素材积累", icon: Layers },
   { id: "records", label: "我的记录", icon: Headphones },
 ] as const;
-function readRoute(): { view: View; sessionId?: string } {
-  const [page, id] = location.hash.replace(/^#\/?/, "").split("/");
+function readRoute(): { view: View; sessionId?: string; materialId?: string; materialScreen?: string; questionId?: string } {
+  const [page, id, detail] = location.hash.replace(/^#\/?/, "").split("/");
+  if (page === "materials") return { view: "materials", materialId: id ? decodeURIComponent(id) : undefined, materialScreen: detail };
   return page === "train" && id
-    ? { view: "train", sessionId: decodeURIComponent(id) }
+    ? { view: "train", sessionId: decodeURIComponent(id), questionId: detail }
     : { view: navItems.some((n) => n.id === page) ? (page as View) : "today" };
 }
 const message = (cause: unknown) =>
@@ -219,11 +224,11 @@ export default function App() {
     };
   }, []);
   const navigate = useCallback(
-    (view: View, id?: string) => {
+    (view: View, id?: string, questionId?: string) => {
       if (busy) return;
       location.hash =
         view === "train"
-          ? `/train/${encodeURIComponent(id || "")}`
+          ? `/train/${encodeURIComponent(id || "")}${questionId ? `/${encodeURIComponent(questionId)}` : ""}`
           : `/${view}`;
       window.scrollTo({ top: 0, behavior: "instant" });
     },
@@ -256,6 +261,7 @@ export default function App() {
     day: TrainingDay,
     mode: "daily" | "practice" = "daily",
     step = 0,
+    questionId?: string,
   ) {
     try {
       const date = localDate();
@@ -280,7 +286,7 @@ export default function App() {
         await saveProgress(p);
         sync(p);
       }
-      navigate("train", p.id);
+      navigate("train", p.id, questionId);
     } catch (cause) {
       setError(message(cause));
     }
@@ -393,6 +399,9 @@ export default function App() {
           />
         ) : route.view === "library" ? (
           <Library onStart={(d, step) => attempt(start(d, "practice", step))} />
+        ) : route.view === "materials" ? (
+          <Materials routeId={route.materialId} reciting={route.materialScreen === "recite"}
+            onPractice={(d, q) => attempt(start(d, "practice", q.type === "quick" ? 1 : q.type === "statement" ? 2 : q.type === "discussion" ? 3 : 4, q.id))} />
         ) : route.view === "records" ? (
           <Records
             progress={progress}
@@ -405,6 +414,7 @@ export default function App() {
         ) : session && trainingDay ? (
           <Training
             key={session.id}
+            initialQuestionId={route.questionId}
             day={trainingDay}
             progress={session}
             recordings={recordings.filter((r) => r.sessionId === session.id)}
@@ -748,11 +758,13 @@ function Home({
         <ShieldCheck size={16} />
         <span>专注练习，没有分数焦虑。你的录音只属于你。</span>
       </div>
+      <a className="material-home-entry" href="#/materials"><BookOpen size={18} /><span>脑子里没素材？先去素材积累</span><ArrowRight size={17} /></a>
     </>
   );
 }
 
 interface TrainingProps {
+  initialQuestionId?: string;
   day: TrainingDay;
   progress: DailyProgress;
   recordings: Recording[];
@@ -766,6 +778,7 @@ interface TrainingProps {
   onDelete: (r: Recording) => Promise<void>;
 }
 function Training({
+  initialQuestionId,
   day,
   progress,
   recordings,
@@ -779,7 +792,10 @@ function Training({
   const [step, setStep] = useState(
     progress.status === "completed" ? 7 : progress.step,
   );
-  const [selected, setSelected] = useState(0);
+  const [selected, setSelected] = useState(() => {
+    const list = progress.step === 1 ? day.quickResponses : progress.step === 3 ? day.discussion : [];
+    return Math.max(0, list.findIndex(q => q.id === initialQuestionId));
+  });
   const [error, setError] = useState("");
   const [note, setNote] = useState(progress.reflection.note);
   const [checks, setChecks] = useState(progress.reflection.checks);
@@ -1058,6 +1074,7 @@ function Training({
                   </span>
                 </div>
                 <h2>{question.prompt}</h2>
+                {materialsForQuestion(question.id).length > 0 && <div className="related-materials"><h3>相关素材</h3>{materialsForQuestion(question.id).map(material => <button className="text-button" disabled={busy} key={material.id} onClick={() => { location.hash = `/materials/${material.id}`; window.scrollTo({ top: 0, behavior: "instant" }); }}><BookOpen size={16} />{material.title}</button>)}</div>}
                 {question.partner && (
                   <div className="partner">
                     <span className="partner-avatar">P</span>

@@ -77,7 +77,7 @@ for (const width of [320, 390]) {
       step: 5,
     };
     await page.evaluate(progress => new Promise<void>((resolve, reject) => {
-      const request = indexedDB.open("cet6-speak-daily", 1);
+      const request = indexedDB.open("cet6-speak-daily");
       request.onerror = () => reject(request.error);
       request.onsuccess = () => {
         const db = request.result;

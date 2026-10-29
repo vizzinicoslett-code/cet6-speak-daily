@@ -4,7 +4,7 @@
 
 **没有后端、注册、登录、云数据库、AI API、广告或在线题库。** 全部 35 天课程随应用提供；录音、训练进度和复盘保存在当前设备浏览器的 IndexedDB 中。
 
-[在线使用](https://vizzinicoslett-code.github.io/cet6-speak-daily/) · [GitHub 仓库](https://github.com/vizzinicoslett-code/cet6-speak-daily) · [最终验收报告](./VALIDATION.md)
+[在线使用](https://vizzinicoslett-code.github.io/cet6-speak-daily/) · [GitHub 仓库](https://github.com/vizzinicoslett-code/cet6-speak-daily) · [素材模块验收](./MATERIALS_VALIDATION.md) · [初版训练验收](./VALIDATION.md)
 
 ## 本地运行
 
@@ -27,7 +27,7 @@ npm run preview
 
 ## 使用方式
 
-底部只有四个主入口：**今日训练、训练日历、题库、我的记录**。
+底部有五个主入口：**今日训练、训练日历、题库、素材积累、我的记录**。
 
 每日流程：今日输入 → 两道 Quick Response → Personal Statement → 三轮 Discussion → Final Question → 今日参考表达 → 回听复盘 → 打卡。
 
@@ -43,6 +43,26 @@ npm run preview
 - 题库可按四类任务、七种主题和中英文关键词筛选。自由练习独立存储，不改变正式打卡。
 - 课程按已完成的正式课程推进，断签不会跳过课程。完成全部 35 天后，可以继续复习最后一天或在题库重练。
 - 页面刷新恢复最后保存的步骤、录音和复盘；正在录制且尚未结束的音频无法在强制关闭后恢复。
+
+## 素材积累：先输入，再输出
+
+新增学习链独立于正式训练和打卡。先看可以应对的题目与中文逻辑，阅读完整准备稿，再进入四阶段背诵：中英对照 → 关键词提示 → 中文提示复述 → 整篇回忆。阶段没有倒计时，查看原文不清零、不判失败。
+
+第一批从原始 `CET6_speaking_materials_batch1.md` 导入 10 篇母题、60 段、84 条可迁移表达，以及 8 类 43 条通用表达。完整稿、分段稿和可选短答分别原样保留；分段稿本来可能是完整稿的精简表达，不强行替换。来源只显示「考后回忆 / 历年高频 / 备考素材」，不编造考试年月。
+
+学习状态与收藏存入独立 IndexedDB store。分段完成度占 80%，整篇回忆明确选择「已掌握」后为 100%。重复学习已掌握素材不会自动降级；「这篇还不熟 / 基本会了」可主动调整。开始背诵会恢复阶段与优先未掌握的分段，普通刷新不增加学习次数。
+
+今日推荐最多 3 篇，优先学习中、复习中、最近学过未掌握，最后新素材；没有必须完成的数量。概况按真实记录计算，今日已学按本机日期统计当日有学习操作的不同素材。素材和通用表达都可收藏到「我的表达」。
+
+题目与素材通过 `src/materialLinks.ts` 中的稳定 ID 显式双向关联。相关主题题目以真实题库原文展示，不宣称完全相同，不为匹配新增重复题；进入的仍是隔离保存的自由练习。
+
+后续将同格式的 `CET6_speaking_materials_batch2.md`、`batch3.md` 等放入项目根目录，运行：
+
+```powershell
+npm run import:materials
+```
+
+导入器自动扫描所有 batch，生成 `src/data/speakingMaterials.generated.json`。`npm run dev` 与 `npm run build` 也会预先运行导入。不要手改生成 JSON；更改内容应编辑 Markdown，已有素材改标题时可用显式 `id` 保持原 ID。重复 ID、标准化标题或冲突表达会报错，验证完成前不覆盖原生成数据。`node scripts/import-speaking-materials.mjs --check` 可只读检查同步状态。
 
 ## 35 天课程
 
@@ -87,7 +107,11 @@ React 19、TypeScript 严格模式、Vite 6、原生 CSS、Lucide 图标、原�
 
 ```text
 src/
-  App.tsx                 四个主页面与完整训练流程
+  App.tsx                 五个主入口与完整训练流程
+  Materials.tsx           素材首页、详情、四阶段背诵与表达收藏
+  materialDomain.ts       分段进度、掌握度与简单推荐规则
+  materialTypes.ts        静态素材与独立用户状态类型
+  materialLinks.ts        基于稳定ID的题目双向关联
   Recorder.tsx            录音、计时、播放与设备异常处理
   domain.ts               完成规则、计时阶段、连续打卡、累计统计
   storage.ts              IndexedDB 与音频/进度原子事务
@@ -104,7 +128,7 @@ scripts/generate-icons.py
 scripts/github-publish.mjs
 ```
 
-所有题目与 Day ID 均稳定。IndexedDB 名称 `cet6-speak-daily`，版本 1，包含 `progress`、`recordings`、`settings` 三个 object store。课程内容升级时应保留已有 ID；未来结构变化通过数据库版本升级处理。
+所有题目与 Day ID 均稳定。IndexedDB 名称 `cet6-speak-daily`，现为版本 2。保留 `progress`、`recordings`、`settings`，只新增 `materialProgress`（主键 `materialId`）和 `favoriteExpressions`（主键 `id`）。升级不清空、不删除、不重建旧 store，并保留未知旧 store。课程及素材更新应保留稳定 ID。
 
 录音 metadata 包含 `id/sessionId/date/dayId/questionId/taskType/createdAt/duration/mimeType` 与音频 Blob。音频和完成状态在同一事务提交，保存失败不会误标为完成。Blob 不进入 localStorage。
 
@@ -126,9 +150,9 @@ scripts/github-publish.mjs
 
 本项目已提交并推送至独立仓库 [cet6-speak-daily](https://github.com/vizzinicoslett-code/cet6-speak-daily)，使用 `main` 分支与 GitHub Actions 部署。
 
-在线地址为 [https://vizzinicoslett-code.github.io/cet6-speak-daily/](https://vizzinicoslett-code.github.io/cet6-speak-daily/)。已确认真实访问返回 HTTP 200，并在该在线地址运行全部 12 项浏览器验收；详细结果见 [VALIDATION.md](./VALIDATION.md)。后续推送 `main` 会自动检查并部署，无需手动上传 `dist`。
+在线地址为 [https://vizzinicoslett-code.github.io/cet6-speak-daily/](https://vizzinicoslett-code.github.io/cet6-speak-daily/)。初版训练和本次素材模块验收分别记录在 [VALIDATION.md](./VALIDATION.md) 与 [MATERIALS_VALIDATION.md](./MATERIALS_VALIDATION.md)。后续推送 `main` 会自动检查并部署，无需手动上传 `dist`。
 
-工作流依次执行 npm ci、TypeScript、Lint、74 项单元与数据测试（含 38 项课程一致性测试）、带仓库名 base path 的 Production Build、12 项 Playwright 浏览器检查，再上传构建产物并部署。
+工作流依次执行 npm ci、TypeScript、Lint、114 项单元与数据测试、带仓库名 base path 的 Production Build、24 项 Playwright 浏览器检查，再上传构建产物并部署。构建前自动从 Markdown 导入素材。
 
 页面使用 hash 路由（如 `#/library`），刷新不请求不存在的服务器路径。Pages 的 Source 已配置为 GitHub Actions。
 

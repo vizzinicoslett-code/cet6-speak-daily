@@ -4,7 +4,7 @@ const app = "/cet6-speak-daily/";
 
 async function storedProgress(page: Page): Promise<DailyProgress[]> {
   return page.evaluate(() => new Promise<DailyProgress[]>((resolve, reject) => {
-    const request = indexedDB.open("cet6-speak-daily", 1);
+    const request = indexedDB.open("cet6-speak-daily");
     request.onerror = () => reject(request.error);
     request.onsuccess = () => {
       const db = request.result;

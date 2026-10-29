@@ -2306,7 +2306,8 @@ textarea::placeholder {
     gap: 6px;
     background: transparent;
     font-size: 9px;
-    min-width: 64px;
+    min-width: 0;
+    flex: 1;
     color: #8a9788;
   }
   .mobile-nav button.active {

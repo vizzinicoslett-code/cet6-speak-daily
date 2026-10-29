@@ -1,4 +1,5 @@
 import type { DailyProgress, Recording, Settings } from "./types";
+import type { FavoriteExpression, MaterialProgress } from "./materialTypes";
 import { validRecording } from "./domain";
 const DB_NAME = "cet6-speak-daily";
 let opening: Promise<IDBDatabase> | undefined;
@@ -13,12 +14,16 @@ export function database(): Promise<IDBDatabase> {
         );
         return;
       }
-      const request = indexedDB.open(DB_NAME, 1);
+      const request = indexedDB.open(DB_NAME, 2);
       request.onupgradeneeded = () => {
         const db = request.result;
         for (const name of ["progress", "recordings", "settings"])
           if (!db.objectStoreNames.contains(name))
             db.createObjectStore(name, { keyPath: "id" });
+        if (!db.objectStoreNames.contains("materialProgress"))
+          db.createObjectStore("materialProgress", { keyPath: "materialId" });
+        if (!db.objectStoreNames.contains("favoriteExpressions"))
+          db.createObjectStore("favoriteExpressions", { keyPath: "id" });
       };
       request.onsuccess = () => {
         request.result.onversionchange = () => {
@@ -84,6 +89,32 @@ async function list<T>(store: string): Promise<T[]> {
 }
 export const loadProgress = () => list<DailyProgress>("progress");
 export const loadRecordings = () => list<Recording>("recordings");
+export const loadMaterialProgress = () => list<MaterialProgress>("materialProgress");
+export const loadFavoriteExpressions = () => list<FavoriteExpression>("favoriteExpressions");
+
+export async function saveMaterialProgress(progress: MaterialProgress): Promise<void> {
+  const db = await database();
+  const tx = db.transaction("materialProgress", "readwrite");
+  const done = committed(tx);
+  tx.objectStore("materialProgress").put(progress);
+  await done;
+}
+
+export async function saveFavoriteExpression(expression: FavoriteExpression): Promise<void> {
+  const db = await database();
+  const tx = db.transaction("favoriteExpressions", "readwrite");
+  const done = committed(tx);
+  tx.objectStore("favoriteExpressions").put(expression);
+  await done;
+}
+
+export async function removeFavoriteExpression(id: string): Promise<void> {
+  const db = await database();
+  const tx = db.transaction("favoriteExpressions", "readwrite");
+  const done = committed(tx);
+  tx.objectStore("favoriteExpressions").delete(id);
+  await done;
+}
 export async function saveProgress(p: DailyProgress): Promise<void> {
   const db = await database();
   const tx = db.transaction("progress", "readwrite");

@@ -250,6 +250,7 @@ test("favorite material expressions and general discussion phrases persist and c
   const phrase = discussion.expressions[0];
   await expect(page.getByText(phrase.expression, { exact: true })).toBeVisible();
   await page.getByRole("button", { name: `收藏表达 ${phrase.expression}`, exact: true }).click();
+  await expect(page.getByRole("button", { name: `取消收藏表达 ${phrase.expression}`, exact: true })).toHaveAttribute("aria-pressed", "true");
   await page.reload();
   await expect(page.getByRole("button", { name: `取消收藏表达 ${phrase.expression}`, exact: true })).toBeVisible();
   await page.getByRole("button", { name: "返回素材积累", exact: true }).click();
